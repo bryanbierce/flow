@@ -42,8 +42,11 @@ next: arrays.html
   Another option is to use the [React preset][preset-es2015] which includes Flow
   support in addition to React-specific plugins.
 
+  If you are using React classes and intend to annotate your state you must also include the Babel plugin [`transform-class-properties`][transform-class-properties] to remove annotations from the component body.
+
   [transform-flow-strip-types]: https://babeljs.io/docs/plugins/transform-flow-strip-types/
   [preset-es2015]: https://babeljs.io/docs/plugins/preset-react/
+  [transform-class-properties]: https://babeljs.io/docs/plugins/transform-class-properties/
 
   ## Comment syntax
 
